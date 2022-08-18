@@ -7,8 +7,9 @@ package Main;
 
 import Models.Plasma;
 import Database.Database;
-import View.PlasmaView;
-import java.util.ArrayList;
+import View.CizimView;
+
+
 
 /**
  *
@@ -20,8 +21,10 @@ public class Main {
         
         Database data=new Database();
         
-        PlasmaView pv=new PlasmaView(data);
+        CizimView pv=new CizimView(data);
         pv.show();
+        
+        
         
         
         //data.shows();

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Default Cursor"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,3,123,0,0,3,-74"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="0"/>
+    <SyntheticProperty name="generateSize" type="boolean" value="true"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="jPanel2" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="99" red="33" type="rgb"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane2" min="-2" pref="928" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel2" min="-2" pref="431" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="jLabel1" alignment="0" min="-2" pref="217" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" pref="149" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" min="-2" pref="634" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="20" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="RECENT CHANGES"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/recent.png"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="26" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="CURRENT SOFTWARE VERSIONS"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Version : "/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Pulsihed Date : "/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea2">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="13" style="1"/>
+                </Property>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="3.62 - Bevel Cut fix thc auto. rev 65&#xa;        - TransmitError. rev 64&#xa;&#xa;3.61 - Add Apply kerf section on main screen&#xa;&#xa;3.60 - Add Microjoint Specific Point&#xa;       - Rotate Axes with R key in Graph Window&#xa;       - Messer Acetylen Added in Oxy Cut Charts Tables&#xa;&#xa;3.58 Operator Ekle Duzenlendi.&#xa;        Y Eksende Angle Eklendi&#xa;&#xa;3.57 Microjoint D&#xfc;zenlendi&#xa;&#xa;3.55 Kesim Tablosuna Mild Steel 200 Amper Eklendi.&#xa;&#xa;3.54 A eksen red&#xfc;ksiyonu eklendi. Kesme &#x130;statistikleri duzenlendi&#xa;&#xa;3.49 Standart Oxy &#xe7;al&#x131;&#x15f;masinda ramp de&#x11f;erini g&#xf6;rm&#xfc;yordu. Hata d&#xfc;zeltildi.&#xa;&#xa;3.48 Oxy saniyeyi inch ceviriyordu. Hata d&#xfc;zeltildi.&#xa; &#xa;3.47 A&#xe7;&#x131;l&#x131; oksijen kesim de&#x11f;erleri parametreler sayfas&#x131;na eklendi.&#xa;&#xa; 3.45 OptHole yap&#x131;l&#x131;rken gaz bas&#x131;n&#xe7;lar&#x131; d&#xfc;zenlendi.&#xa;&#xa; 3.44  - Oksijen kesim tablosu d&#xfc;zenlendi&#xa;         - 5 Eksen Kesim i&#xe7;in MDI &quot;W&quot; parametresi eklendi.&#xa; &#xa; 3.43  G kodunu eklemek i&#xe7;in + Add Lines butonu eklendi. Butona bast&#x131;g&#x131;n&#x131;zda a&#xe7;&#x131;lan ekrana G kodlar&#x131;n&#x131;z&#x131;&#xa;          yazabilirsiniz.&#xa;&#xa; 3.42   Programa son yap&#x131;lan de&#x11f;i&#x15f;iklileri g&#xf6;steren aray&#xfc;z eklenmi&#x15f;tir. Version aray&#xfc;z&#xfc;nde ki RecentChanges&#xa;          butonuna basl&#x131;larak en son yap&#x131;lan de&#x11f;i&#x15f;iklikler g&#xf6;r&#xfc;nt&#xfc;lenir.&#xa;&#xa; 3.42   Elkumanda da h&#x131;z de&#x11f;eri %100 ki de&#x11f;eri %50 ald&#x131;&#x11f;&#x131;m&#x131;zda tutmuyordu. Sorun giderildi.&#xa;&#xa; 3.42   5 Eksen oxy kesimde patlamada dik patlatma yapm&#x131;yordu. Sorun d&#xfc;zeltildi.&#xa;&#xa; 3.41   Oksijen DxfDilaogOxyfrm de yanl&#x131;&#x15f; gosteriyordu d&#xfc;zeltildi&#xa;&#xa; 3.41   Purge men&#xfc;s&#xfc;nde load bar d&#xfc;zg&#xfc;n &#xe7;al&#x131;&#x15f;m&#x131;yordu d&#xfc;zeldildi.&#xa;&#xa; 3.41   ArcScale grafik eklendi.&#xa;&#xa; 3.41   ArcScale &#xe7;al&#x131;&#x15f;m&#x131;yordu d&#xfc;zeldildi.&#xa;&#xa; 3.40   Markalamada h&#x131;z de&#x11f;i&#x15f;tirme &#xf6;zelli&#x11f;i eklendi.&#xa;&#xa; 3.39   Boru kesme ayna d&#xf6;n&#xfc;&#x15f; y&#xf6;n&#xfc; eklendi.&#xa; &#xa; 3.38   Cut Charts oxygen Heatin Nozzle etiketi eklendi.&#xa; &#xa; 3.37   readdxf lwpoliline ilk vertex duzeltildi.&#xa; &#xa; 3.36   bevelcut WD 3 e sabitlendi.&#xa; &#xa; 3.35   Oxy kesim tablosu cuttype thickness seciminde de degisiyordu. Duzeltildi.&#xa; &#xa; 3.34   scale ve cut order eklendi.&#xa; &#xa; 3.33   Purge menuye esc eklendi, Proje popup menude eksen ata kapatildi.&#xa; &#xa; 3.32   Hatadan sonra resumede son konturda &#xe7;akilma yap&#x131;yordu. hplin de&#x11f;i&#x15f;ti.19 EYLUL 2019&#xa; &#xa; 3.31   Oxy hizli tavlama ledi hplin degisti. 8 EYLUL 2019&#xa; &#xa; 3.30   Autozero pause takiliyordu.Sorun d&#xfc;zeltildi.&#xa; &#xa; 3.29   SHEETWIDTHOFFSET ve SHEETHEIGHTOFFSET eklendi.&#xa; &#xa; 3.28   Oksijen tavlama ekrana bas&#x131;ld&#x131;.29 agustos 2018 &#xa; &#xa; 3.27   Inch thicknessler de&#x11f;isti. &#x130;nch feedrate tam sayi oldu.&#xa; &#xa; 3.26   C ve D ekseni resposx sorun d&#xfc;zeltildi. 16 A&#x11e;USTOS 2019 &#xa; &#xa; 3.25   Oksijen gaz hatalari ile ilgili sorun d&#xfc;zeltildi. 15 A&#x11e;USTOS 2019 &#xa; &#xa; 3.25   K&#xfc;&#xe7;&#xfc;k radiuslerde &apos;C&apos; ekseni titreme yap&#x131;yordu. Sorun d&#xfc;zeltildi.15 A&#x11e;USTOS 2019 &#xa; &#xa; 3.25   Parca sifiri hatali geliyordu.Sorun d&#xfc;zeltildi.15 A&#x11e;USTOS 2019 &#xa; &#xa; 3.24   5 eksende bevel son kontur kayboluyordu. Ve c 450 iken 540 a gidiyordu. Sorun d&#xfc;zeltildi .08 A&#x11e;USTOS 2019 &#xa; &#xa; 3.23   Tek kontur resumede problem yap&#x131;yordu.Sorun d&#xfc;zeltildi. 07 A&#x11e;USTOS 2019 &#xa; &#xa; 3.22   temp degiskenini bozuyordu. Sorun d&#xfc;zeltildi.02 A&#x11e;USTOS 2019&#xa; &#xa; 3.21   Ac&#x131;l&#x131; kesmede essiden &apos;essi convert C- D&apos; d&#xfc;zenlendi.&#xa; &#xa; 3.20   &#x130;sim sirasina g&#xf6;re dizilme eklentisi eklendi.&#xa; &#xa; 3.19   MPG ve DXF lerde iki dosya oldu mu ayn&#x131; objeleri seciliyordu.Sorun d&#xfc;zeltildi.&#xa; &#xa; 3.18   MDI dan H1(HS)  H2(HC) modlari eklendi.&#xa; &#xa; 3.17   Essi almada AjanCam&apos;de  inchte gereksiz kontur geliyordu.Sorun d&#xfc;zeltildi.&#xa; &#xa; 3.16   Proje acilirken X Acisi mesaj&#x131; turkce idi dillere eklendi.&#xa; &#xa; 3.16   Verilen Offset yeni dosyaya kaydedildi.&#xa; &#xa; 3.16   Graph ofset verme inch eklendi.&#xa; &#xa; 3.16   ObjectSpec penceresindeki veriler inche &#xe7;evrildi.&#xa; &#xa; 3.16   80 amper marking Ak&#x131;m 15 amper yerine 80 geliyordu. Veritaban&#x131;ndan d&#xfc;zenlendi. &#xa; &#xa; 3.15   Libraryde a&#xe7;&#x131; ve adet de&#x11f;erlerinide inche ceviriyordu. D&#xfc;zeltildi.&#xa; &#xa; 3.14   StatsFrame Clear All ve Delete Operator butonuna uyar&#x131; mesaj&#x131; eklendi.&#xa; &#xa; 3.13   Dosya gonderme eklendi.&#xa; &#xa; 3.12   Acilidan d&#xfc;ze gecerken pozisyon kaybediyordu.Sorun d&#xfc;zeltildi.&#xa; &#xa; 3.11   Metric&apos;den inch&apos;e d&#xf6;n&#xfc;&#x15f;&#xfc;m eklendi.&#xa; &#xa; 3.10   PrePlasmaGazBas&#x131;nc&#x131; yerine CutPlasmagazbas&#x131;nc&#x131; set ediliyordu . Legalproject.java i&#xe7;inde d&#xfc;zeltildi. &#xa; &#xa; 3.09   Proje kaydediliyor yaz&#x131;s&#x131; eklendi.&#xa; &#xa; 3.08   Log veri tutmada saat 1 saat geriden kaydediyordu, D&#xfc;zeltildi.&#xa; &#xa; 3.07   &quot; x1 - x10  - x100 &quot; butonlar&#x131; d&#xfc;zenlendi.&#xa; &#xa; 3.06   Elkumanda d&#xfc;zenlendi A-C-D eksenleri eklendi.&#xa; &#xa; 3.05   Graph penceresine &apos; PIPECUT &apos;  se&#xe7;imi eklendi.&#xa; &#xa; 3.04   G&#xfc;nl&#xfc;k yap&#x131;lan i&#x15f;lerin kayd&#x131;n&#x131;n tutulmas&#x131; i&#xe7;in LOG.TXT veri tutma eklendi.&#xa; &#xa; 3.03   &apos; X &apos; a&#xe7;&#x131;s&#x131; projede farkl&#x131;ysa uyar&#x131; verilmesi eklendi.&#xa; &#xa; 3.02   Baz&#x131; &#xe7;izimlerde torch ayn&#x131; sekilde bir cok patlatma yap&#x131;yor. Hassasiyet azaltidi.&#xa; &#xa; 3.01   Elkumanda da &apos; X &apos; a&#xe7;&#x131;s&#x131; atand&#x131;&#x11f;&#x131;nda tezgah vuruntulu gidiyordu, d&#xfc;zeltildi.&#xa;&#xa; 3.00   GRAPH MENUSU DUZENLENDI - BEVEL EKLENDI.&#xa;&#xa;"/>
+                <Property name="caretPosition" type="int" value="0"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
