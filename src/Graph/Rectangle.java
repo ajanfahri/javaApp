@@ -5,6 +5,7 @@
  */
 package Graph;
 
+import java.awt.Point;
 import java.util.ArrayList;
 
 /**
@@ -35,6 +36,19 @@ public class Rectangle {
             ln.setSelected(selected);
             Lines.set(i,ln);
         }
+        
+    }
+
+    boolean CheckForCatch(Point pxy, int CX, int CY, double Scale) {
+        for(int j=0;j<this.Lines.size();j++)
+            if(((Line) this.Lines.get(j)).CheckForCatch(pxy,CX,CY,Scale)==true)
+                return true;
+        return false;
+    }
+
+    void MoveToObject(double ShiftX, double ShiftY) {
+        for(int j=0;j<this.Lines.size();j++)
+            ((Line) this.Lines.get(j)).MoveToObject(ShiftX,ShiftY);
         
     }
     

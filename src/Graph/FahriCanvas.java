@@ -34,6 +34,7 @@ public class FahriCanvas extends java.awt.Canvas{
     private int CX, CY, centerX, centerY;
     private double Scale = 1;
     private double ShiftX = 0, ShiftY = 0;
+    private double OldShiftX = 0, OldShiftY = 0;
     private int MX, MY, mxb = 0, myb = 0, MicroBoxSize = 250, StartStopBoxSize = 250;    
     private int MouseShiftStX = 0, MouseShiftStY = 0, ZWindowStX = 0, ZWindowStY = 0;    
     
@@ -91,13 +92,16 @@ public class FahriCanvas extends java.awt.Canvas{
             public void mousePressed(MouseEvent me) {
                MouseShiftStX = me.getX();
                MouseShiftStY = me.getY();
+               if(cizim.getMoveEnable()){ OldShiftY=OldShiftX=0;}
             }
 
             @Override
             public void mouseReleased(MouseEvent me) {
                 MouseShiftStX = 0;
                 MouseShiftStY = 0;
+                
                 repaint();
+                cizim.setMoveEnable(false);
             }
 
             @Override
@@ -115,14 +119,22 @@ public class FahriCanvas extends java.awt.Canvas{
         this.addMouseMotionListener(new MouseMotionListener(){
             @Override
             public void mouseDragged(MouseEvent me) {
+                
                 MouseShiftStX -= me.getX();
                 MouseShiftStY -= me.getY();
                 ShiftX -= MouseShiftStX;
                 ShiftY -= MouseShiftStY;
-                CX = (int) (centerX + ShiftX);
-                CY = (int) (centerY + ShiftY);
+                
                 MouseShiftStX = me.getX();
                 MouseShiftStY = me.getY();
+                if(cizim.getMoveEnable()&&OldShiftX!=0){
+                    cizim.MoveSelectedObject(OldShiftX-ShiftX,OldShiftY-ShiftY);
+                }
+                else{
+                    CX = (int) (centerX + ShiftX);
+                    CY = (int) (centerY + ShiftY);
+                }
+                OldShiftX=ShiftX;OldShiftY=ShiftY;
                 repaint();
             }
 
@@ -194,7 +206,7 @@ public class FahriCanvas extends java.awt.Canvas{
 
     private void arcciz(Circle ar) {
         if(ar.isSelected())lay1.setColor(Color.yellow);else lay1.setColor(Color.black);
-        lay1.drawArc(CX + (int)((ar.xc - ar.radius) * Scale) , CY - (int)((ar.yc-ar.radius) * Scale) , (int)(ar.radius * Scale), (int)(ar.radius * Scale), 0,360);
+        lay1.drawArc(CX + (int)((ar.xc - ar.radius) * Scale) , CY - (int)((ar.yc + ar.radius) * Scale) , (int)(ar.radius * Scale)*2, (int)(ar.radius * Scale)*2, 0,360);
         //lay1.drawArc(CX - (int)(( ar.radius/2 ) * Scale) , CY - (int)((ar.radius/2) * Scale) , (int)(ar.radius * Scale), (int)(ar.radius * Scale), 0,360);
         //lay1.drawArc(CX + 0 , CY - 0 , (int)(50 * Scale), (int)(50 * Scale), 0,90);
         //lay1.draw(new Arc2D.Double(CX-25, CY-25, 50   , 50  , 45,135, Arc2D.OPEN));

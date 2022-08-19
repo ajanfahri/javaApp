@@ -25,8 +25,10 @@ public class Cizim {
     
     //private java.util.ArrayList<Object> 
     ObservableList<Object> Shapes = FXCollections.observableArrayList();
+    private int[] SelectedArray=new int[]{};
     private Canvas canvas;
     private int secilen=-1;
+    private boolean MoveEnable=false;
     
     public Cizim(){
      
@@ -82,132 +84,57 @@ public class Cizim {
         Rectangle Rect;
         Circle circ;
         boolean CatchOk=false;
-        
         for(int i=0;i<Shapes.size();i++){
             if(Shapes.get(i) instanceof Line || Shapes.get(i) instanceof Rectangle)
             {
                 if(Shapes.get(i) instanceof Line){
                     ln = (Line) Shapes.get(i);
                     ln.setSelected(false);
-                    if(!CatchOk){CatchOk=CheckLine(ln,pxy,CX,CY,Scale);
-                    ln.setSelected(CatchOk);this.secilen=i;}
+                    if(!CatchOk){
+                        CatchOk=ln.CheckForCatch(pxy,CX,CY,Scale);
+                        ln.setSelected(CatchOk);this.secilen=i;
+                    }
                     Shapes.set(i, ln);    
                 }
                 else {
                     Rect = (Rectangle) Shapes.get(i);
                     Rect.setSelected(false);
                     if(!CatchOk){
-                    for(int j=0;j<Rect.Lines.size();j++){
-                        if(CheckLine((Line) Rect.Lines.get(j),pxy,CX,CY,Scale)==true)
-                        {
-                          CatchOk=true;
-                          Rect.setSelected(true);this.secilen=i;
-                          break;
-                        };}
+                        CatchOk=Rect.CheckForCatch(pxy,CX,CY,Scale);
+                        Rect.setSelected(CatchOk);this.secilen=i;
                     }
                     Shapes.set(i, Rect);    
                 }
             }
             else if(Shapes.get(i) instanceof Circle){
-                
-                
                     circ = (Circle) Shapes.get(i);
                     circ.setSelected(false);
-                    if(!CatchOk){CatchOk=CheckCircle(circ,pxy,CX,CY,Scale);
+                    if(!CatchOk){
+                    CatchOk=circ.CheckForCatch(pxy,CX,CY,Scale);
                     circ.setSelected(CatchOk);this.secilen=i;}
                     Shapes.set(i, circ);    
-                
-                
             }
         }
         return CatchOk;
     }
 
-    private boolean CheckLine(Line line,Point pxy, int CX, int CY, double Scale) {
-        boolean CatchOk=false;
-        double xs, xe, ys, ye,xmer,ymer;//,xc=vect.oge.xc,yc=vect.oge.yc;
-        int Xsize=5,Ysize=5;
-        double mxs = (pxy.x - Xsize), mxe = pxy.x + Xsize, mys = pxy.y + Ysize, mye = pxy.y - Ysize;
-        xmer = (pxy.x - CX) / Scale;
-        ymer = (CY - pxy.y) / Scale;
-        mxs = (mxs - CX) / Scale;
-        mxe = (mxe - CX) / Scale;
-        mys = (CY - mys) / Scale;
-        mye = (CY - mye) / Scale;
-        
-        if (line.xn1 > line.xn2) {
-                    xs = line.xn2;
-                    xe = line.xn1;
-                } else {
-                    xs = line.xn1;
-                    xe = line.xn2;
-                }
-                if (line.yn1 > line.yn2) {
-                    ys = line.yn2;
-                    ye = line.yn1;
-                } else {
-                    ys = line.yn1;
-                    ye = line.yn2;
-                }
-                
-                if ((mxe > xs && mxs < xe) && (mye > ys && mys < ye)) {
-                
-                double distance = Math.abs(((line.xn2 - line.xn1) * (line.yn1 - ymer) - (line.yn2 - line.yn1) * (line.xn1 - xmer)))
-                        / Math.sqrt((line.yn2 - line.yn1) * (line.yn2 - line.yn1) + (line.xn2 - line.xn1) * (line.xn2 - line.xn1));
-                double distanceW
-                        = Math.sqrt((mxe - mxs) * (mxe - mxs) / 4. + (mye - mys) * (mye - mys) / 4.);
-                
-                if (distance < distanceW) {
-                 CatchOk = true;
-                }}
-    return CatchOk;
+    public void move() {
+        if(secilen>-1)this.setMoveEnable(true);
     }
 
-    private boolean CheckCircle(Circle circ,Point pxy, int CX, int CY, double Scale){
-        boolean CatchOk=false;
-        double xs, xe, ys, ye,xmer,ymer;//,xc=vect.oge.xc,yc=vect.oge.yc;
-        int Xsize=8,Ysize=8;
-        double mxs = (pxy.x - Xsize), mxe = pxy.x + Xsize, mys = pxy.y + Ysize, mye = pxy.y - Ysize;
-        xmer = (pxy.x - CX) / Scale;
-        ymer = (CY - pxy.y) / Scale;
-        mxs = (mxs - CX) / Scale;
-        mxe = (mxe - CX) / Scale;
-        mys = (CY - mys) / Scale;
-        mye = (CY - mye) / Scale;
-        
-        double sa=0, ea=360;
-        
-            /*if (circ.indx == 2) {
-                sa = circ.360;
-                ea = circ.0;
-            } else {
-                ea = 360;
-                sa = 0;
-            }*/
-            if (ea < sa) {
-                ea += 2 * Math.PI;
-            }
+    public boolean getMoveEnable() {
+        return MoveEnable;
+    }
 
-            double start = sa, delta_aci = (ea - sa) / 360., min_delta = 0;
-            if ((mxe - mxs) > (mye - mys)) {
-                min_delta = (mye - mys);
-            } else {
-                min_delta = (mxe - mxs);
-            }
-            if ((min_delta != 0) && circ.radius != 0 && (delta_aci > min_delta)) {
-                delta_aci = min_delta / Math.abs(circ.radius);
-            }
-            while (start < ea) {
-               
-                if ((circ.xc + Math.abs(circ.radius/2) * Math.cos(start)) >= mxs && (circ.xc + Math.abs(circ.radius/2) * Math.cos(start)) <= mxe) {
-                    if ((circ.yc + Math.abs(circ.radius/2) * Math.sin(start)) >= mys && (circ.yc + Math.abs(circ.radius/2) * Math.sin(start)) <= mye) {
-                        CatchOk = true;
-                        break;
-                    }
-                }
-                start += delta_aci;
-            }
-        return CatchOk;
+    public void setMoveEnable(boolean MoveEnable) {
+        this.MoveEnable = MoveEnable;
+    }
+
+    
+    public void MoveSelectedObject(double ShiftX, double ShiftY) {
+             if(Shapes.get(secilen) instanceof Line)((Line) Shapes.get(secilen)).MoveToObject(ShiftX,ShiftY);
+        else if(Shapes.get(secilen) instanceof Rectangle)((Rectangle) Shapes.get(secilen)).MoveToObject(ShiftX,ShiftY);
+        else if(Shapes.get(secilen) instanceof Circle)((Circle) Shapes.get(secilen)).MoveToObject(ShiftX,ShiftY);
     }
     
     

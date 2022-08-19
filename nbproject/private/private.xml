@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/View/PlasmaView.java</file>
-            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/Shapes/Cizim.java</file>
-            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/Shapes/Line.java</file>
-            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/Shapes/Circle.java</file>
+            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/Graph/Cizim.java</file>
+            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/View/DataView.java</file>
+            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/Graph/Rectangle.java</file>
+            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/Graph/Circle.java</file>
+            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/Graph/FahriCanvas.java</file>
+            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/View/CizimView.java</file>
+            <file>file:/C:/Users/ajanuser/Documents/NetBeansProjects/TestApp/src/Graph/Line.java</file>
         </group>
     </open-files>
 </project-private>
