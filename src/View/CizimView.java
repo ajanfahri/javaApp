@@ -234,10 +234,12 @@ public class CizimView extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        for(int i=0 ; i<= Integer.parseInt(jTextField2.getText());i++){
         Random r = new Random();
         int low = -100;
         int high = 100;
          cizim.addCircle(new Circle( r.nextInt(100) , r.nextInt(100), r.nextInt(250)));
+        }
          //cizim.addCircle(new Circle(100,100,100));
     }//GEN-LAST:event_jButton3ActionPerformed
 

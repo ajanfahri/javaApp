@@ -31,7 +31,10 @@ public class Student {
     public Student(Connection conn,Statement stmt){
     this.Conn=conn;
     this.stmt=stmt;
+    
     if(isTableExist()==false)CreateTable();
+
+    
     }
     
     
@@ -75,6 +78,18 @@ public class Student {
                    "(id INTEGER NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1)," +
                    " isim VARCHAR(25), " + 
                    " soyisim VARCHAR(25)) ";
+            this.stmt.executeUpdate(this.sql);
+            System.out.println("Created table in given database...");   	  
+        } catch (SQLException ex) {
+            Logger.getLogger(Student.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("NOT CREATED table in given database...");   	  
+        }
+         
+    }
+
+    private void TabloSil() {
+            try {
+            this.sql = "DROP TABLE " +this.TABLENAME;
             this.stmt.executeUpdate(this.sql);
             System.out.println("Created table in given database...");   	  
         } catch (SQLException ex) {
