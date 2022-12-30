@@ -1,11 +1,18 @@
 ----------------------------------------------------------------
+<<<<<<< HEAD
 Fri Dec 09 09:57:55 EET 2022:
 Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0184-f5e4-129a-00001dc2c700 
 on database directory C:\Users\ajanuser\Documents\NetBeansProjects\TestApp\test with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_111/db/lib/derby.jar
+=======
+Sat Dec 03 18:06:37 EET 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0184-d886-6400-00000e5eb5a0 
+on database directory C:\Users\Fahri\javaApp\test with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_161/db/lib/derby.jar
+>>>>>>> 98cd26b7434aa1bbc044e64609fd0f4830cd9472
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_111-b14
-user.dir=C:\Users\ajanuser\Documents\NetBeansProjects\TestApp
+java.runtime.version=1.8.0_161-b12
+user.dir=C:\Users\Fahri\javaApp
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
